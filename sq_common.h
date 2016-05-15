@@ -41,3 +41,17 @@ typedef struct
     int size;
 }SqStack;
 
+// qnode common def
+typedef int QElemtype;
+
+typedef struct QNode 
+{
+    QElemtype data;
+    struct QNode *next;
+}QNode, *QueuePtr;
+
+typedef struct 
+{
+    QueuePtr front;
+    QueuePtr rear;
+}LinkQueue;
