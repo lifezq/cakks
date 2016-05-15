@@ -1,25 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-#define TRUE 1
-#define FALSE 0
-#define OK 1
-#define ERROR 0
-#define INIT_SIZE 10
-#define INCREMENT_SIZE 5
-
-typedef int Status;
-typedef int Elemtype;
-
-/*
- *  storage struct
- */
-typedef struct
-{
-    Elemtype *elem;
-    int length;
-    int size;
-}Sqlist;
+#include "./sq_common.h"
 
 /*
  * init sqlist

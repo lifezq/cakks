@@ -1,23 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-#define TRUE 1
-#define FALSE 0
-#define OK 1
-#define ERROR 0
-#define OVERFLOW -2
-
-typedef int ElemType;
-typedef int Status;
-
-/*
- * Storage struct
- */
-typedef struct LNode
-{
-    ElemType data;
-    struct LNode *next;
-}LNode, *LinkList;
+#include "./sq_common.h"
 
 /*
  * Initialize LinkList
