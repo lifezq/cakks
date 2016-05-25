@@ -55,3 +55,16 @@ typedef struct
     QueuePtr front;
     QueuePtr rear;
 }LinkQueue;
+
+
+/*-----------------------------------------------------------------------------
+ *  BiTreeNode common def
+ *-----------------------------------------------------------------------------*/
+typedef int TElemType;
+
+struct BiTNode {
+    TElemType data;
+    struct BiTNode *lchild, *rchild;
+};				/* ----------  end of struct BiTNode  ---------- */
+
+typedef struct BiTNode BiTNode, *BiTree;
