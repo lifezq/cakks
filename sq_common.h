@@ -68,3 +68,41 @@ struct BiTNode {
 };				/* ----------  end of struct BiTNode  ---------- */
 
 typedef struct BiTNode BiTNode, *BiTree;
+
+                                                
+/*-----------------------------------------------------------------------------
+ *  EdgeNode common def  
+ *-----------------------------------------------------------------------------*/
+
+#define	MAX_NUM 20			/*  */
+
+typedef char VexType;
+
+struct EdgeNode {
+    int adjvex;
+    struct EdgeNode *next;
+};				/* ----------  end of struct EdgeNode  ---------- */
+
+typedef struct EdgeNode EdgeNode,*EdgeLink;
+
+struct VexNode {
+    VexType data;
+    EdgeNode *firstEdge;
+};				/* ----------  end of struct VexNode  ---------- */
+
+typedef struct VexNode VexNode, AdjList[MAX_NUM];
+
+
+struct AlGraph {
+    AdjList adjList;
+    int vexNum,edgeNum;
+};				/* ----------  end of struct AlGraph  ---------- */
+
+typedef struct AlGraph AlGraph;
+
+
+
+
+
+
+
